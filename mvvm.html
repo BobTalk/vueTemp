@@ -33,6 +33,7 @@
             getHelloWord: function () {
                 return this.someStr + this.child.someStr;
             }
+
         },
         methods: {
             clickBtn: function (e) {
@@ -42,7 +43,7 @@
         }
     });
     vm.$watch('child.someStr', function () {
-        console.log(arguments);
+        // console.log(arguments);
     });
 </script>
 

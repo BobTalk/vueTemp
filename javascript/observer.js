@@ -1,4 +1,5 @@
 function Observer(data) {
+    console.log(JSON.stringify(data));
     this.data = data;
     this.walk(data);
 }
@@ -45,7 +46,6 @@ function observe(value, vm) {
     if (!value || typeof value !== 'object') {
         return;
     }
-
     return new Observer(value);
 };
 
